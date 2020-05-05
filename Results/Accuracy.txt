@@ -1,0 +1,21 @@
+Try #,accuracy
+1, 0.80614	// the first kmeans labling
+2, 0.62429	// 10 iterations kmeans
+3, 0.58957	// 20 iterations kmeans
+4, 0.58614	// 50 iterations kmeans
+5, 0.82543	// SVM using 5000 sample of training data at random
+6, 0.67		// SVM using 5000 sample of training data at random with my own features
+7, 0.71843	// SVM using 5000 sample of training data at random with HOG features
+8, 0.71514	// SVM using 5000 sample of training data at random with canny edge detector
+9, 0.72186	// SVM using 5000 sample of training data at random with canny edge detector and HOG features
+10, 0.82543		// SVM using 5000 sample of training data at random with data itself and canny edge detector and HOG features
+11, 0.72057	// SVM using 5000 sample of training data at random with HOUGH transform
+12, 0.82529	// SVM using 5000 sample of training data at random with data itself and HOG features and HOUGH transform
+13, 0.72057	// SVM using 5000 sample of training data at random with HOUGH transform and HOG
+14, 0.83614	// SVM using 10000 sample of training data at random, 24*24 and rotated 33 degree
+15, 0.65629	// SVM using 20000 sample of training data at random, 24*24 and rotated 33 degree
+16, 0.74571	// SVM using 20000 sample of training data at random
+until now, every SVM was with bestGamma = 2^(-13); bestC = 2^(-5);
+
+17, 0.92857	// SVM using 10000 sample at random, 6corners with both methods, Gamma = 2^(-15) and C=2^15
+18, 0.93771	// SVM using 10000 sample at random, [HOG,Canny,Hough] features, Gamma = 2^(-13) and C=2^5
